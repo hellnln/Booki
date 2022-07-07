@@ -600,7 +600,20 @@ footer {
     
     /* Section activity */
 
-    
+    .main-card-activity {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-activity {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-activity {
+        height: 200px;
+        
+    }
 
 
   
