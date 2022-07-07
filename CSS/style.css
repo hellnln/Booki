@@ -367,105 +367,116 @@ a {
 
 .main-activity {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 600px;
-}
-
-
-.main-box-act {
-    display: flex;
     flex-direction: column;
-    background-color: white;
-    justify-content: space-between;
-    width: 22%;
-    height: 550px;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 5px;
-    margin: 10px;
-  
-        
+    margin-bottom: 30px;
 }
 
-.box-act-big {
+.main-card-activity {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     justify-content: space-between;
-    height: 100%;
-    box-shadow: 5px 5px 10px lightgray;  
-    border-radius: 20px;
 }
 
-.box-act-pomegues {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    height: 60%;
-    box-shadow: 5px 5px 10px lightgray;   
-    border-radius: 20px;
-    margin-bottom: 20px;
-       
-}
-
-
-.box-act-frioul {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    height: 36%;
-    box-shadow: 5px 5px 10px lightgray;   
-    border-radius: 20px;
-    margin-top: 20px;
-       
-}
-
-
-.box-act-ndlagarde {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    height: 42%;
-    box-shadow: 5px 5px 10px lightgray;   
-    border-radius: 20px;
-    margin-bottom: 20px;
-      
-}
-
-.box-act-longchamp {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    height: 52%;
-    box-shadow: 5px 5px 10px lightgray;   
-    border-radius: 20px;
-    margin-top: 20px;
-    }
-
-.img-act-big {
-    height: 100%;
-    border-top-left-radius:15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
-}
-
-
-.img-act-small {
-    height: 85%;
-    border-top-left-radius:15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
+.card-activity h3 {
+    padding: 10px;
     
 }
 
-.titre-act {
-    height: 20%;
+.card-activity {
+   width: 23%;
+   height: 650px;
+   
+}
+
+.card-big-box {
+    box-shadow: 5px 5px 10px lightgray;   
+    border-radius: 20px;
+    height: 650px;
 }
 
 
-.main-activity h3 {
-    padding: 10px;
+.card-small-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
+
+.img-act-big img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+}
+
+.img-act-big {
+    height: 610px;
+}
+
+.Pomegues {
+    height: 370px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px lightgray;   
+    border-radius: 20px;
+}
+
+.Pomegues img {
+    height: 330px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+   
+}
+
+.frioul {
+    height: 240px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px lightgray;   
+    border-radius: 20px;
+}
+
+.frioul img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+}
+
+.lagarde {
+    height: 310px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px lightgray;   
+    border-radius: 20px;
+}
+
+.lagarde img {
+    height: 270px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+   
+}
+
+.longchamp {
+    height: 300px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px lightgray;   
+    border-radius: 20px;
+}
+
+.longchamp img {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+   
+}
+
 
 /* Footer */
 
@@ -577,10 +588,7 @@ footer {
         
     }
 
-    footer {
-        margin-top: 20px;
-    }
-
+   
     /* section populaires */
 
     .populaires {
@@ -592,29 +600,7 @@ footer {
     
     /* Section activity */
 
-    .main-activity {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-    }
-
-    .main-box-act {
-       width: 100%;
-       height: 100%; 
-       margin: 20px 0 20px 0;
-       padding: 0;       
-    }
-
-   
-    .img-act-small {
-        height: 200px;
-    }
-
-    .img-act-big {
-        height: 200px;
-    }
-
+    
 
 
   
@@ -630,7 +616,10 @@ footer {
         width: 100%;
     }
 
-   
+    footer {
+        margin-top: 20px;
+    }
+
 
 }
 
