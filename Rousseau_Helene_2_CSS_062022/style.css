@@ -249,8 +249,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 10px;
 }
 
 .box-hebergement {
@@ -539,7 +538,7 @@ footer {
         color: #0065fc;
     }
         
-        /* Section recherche */
+    /* Section recherche */
 
     .btn-recherche {
         display: none;
@@ -688,7 +687,8 @@ footer {
         background-color: white;
         padding: 0;
     }
-    
+
+        
     .populaires {
         width: 100%;
         margin: 5px;
