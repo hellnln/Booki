@@ -37,23 +37,17 @@
 
 <!-- Barre recherche -->
 
+<div class="formulaire">
     <form action="#" method="post" >
         <div class="barre-formulaire">
-            <div class="icon-map">
-                <label for="ville"><i class="fa-solid fa-location-dot"></i></label>
-            </div>
-            <div >
-                <input class="barre-recherche" type="text" name="ville" id="ville" required placeholder="Marseille, France">
-            </div>
-            <div>
-                <button type="submit" class="btn-recherche">
-                    <p>Rechercher</p>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
+                <label class="icon-map" for="ville"><i class="fa-solid fa-location-dot"></i></label>
+                <input class="barre-recherche" type="text" name="ville" id="ville" value="Marseille, France">
+                <input class="btn-recherche" type="submit" value="Rechercher">
+                <i class="fa-solid fa-magnifying-glass btn-recherche"></i>
         </div>
     </form>
-
+</div>    
+    
     <!-- Filtres -->
 
     <div class="main-filtres">
@@ -350,22 +344,28 @@
 </section>
 </main>
 <footer>
-  <div class="footer-box">
-    <h3>A propos</h3>
-        <p>Fonctionnement du site</p>
-        <p>Conditions générales de vente</p>
-        <p>Données et confidentialité</p>
-  </div>
-  <div class="footer-box">
-    <h3>Nos Hébergements</h3>
-        <p>Charte qualité</p>
-        <p>Soumettre votre hôtel</p>
-  </div>
-  <div class="footer-box">
-    <h3>Assistance</h3>
-        <p>Centre d'aide</p>
-        <p>Nous contacter</p>
-  </div>
+    <div class="footer-box">
+        <h3>A propos</h3>
+            <ul>
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales de vente</li>
+                <li>Données et confidentialité</li>
+            </ul>    
+    </div>
+    <div class="footer-box">
+        <h3>Nos Hébergements</h3>
+        <ul>
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li>
+        </ul>
+    </div>
+    <div class="footer-box">
+        <h3>Assistance</h3>
+        <ul>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+        </ul>
+    </div>
 </footer>
 </body>
 </html>
