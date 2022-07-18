@@ -26,6 +26,10 @@ a {
     color: black;
     }
 
+body {
+    margin: 0;
+}
+
    /* Header */
 
 .navbar{
@@ -40,21 +44,22 @@ a {
     display: flex;
     flex-direction: row;
     text-decoration: none;
-   
-}
+   }
 
 .nav a:hover {
-    border-top: 2px solid #0065fc;
+    border-top: 2px solid #0065fc;  
     color: #0065fc;
+    padding: 43px 20px 20px 20px;
 }
 
 .nav a {
-    padding: 20px;
+    padding: 45px 20px 20px 20px;
     
 }
 
 .logo img {
     width: 45%;
+    height:75%;
    }
 
 .logo {
@@ -82,16 +87,21 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 30px;
-
+    padding: 30px;
+    
 }
+
 .barre-formulaire {
     display: flex;
     flex-direction: row;
     padding: 0px;
     margin-top: 15px;
     margin-bottom: 15px;
+}
 
+input::placeholder {
+    color: black;
+    font-size: 15px;
 }
 
 .icon-map {
@@ -165,7 +175,7 @@ a {
     justify-content: center;
     height: 50px;
     width: auto;
-    padding: 0 20px 0 60px;
+    padding: 0 20px 0 50px;
     border: 2px solid #f2f2f2;
     border-radius: 50px;
     margin: 5px;
@@ -229,9 +239,10 @@ a {
     display: flex;
     flex-direction: row;
     margin: 30px;
+     
 }
 
-.hebergement{
+.hebergement-main-box{
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -240,6 +251,7 @@ a {
     padding: 10px;
     border-radius: 15px;
     margin-right: 20px;
+        
 }
 
 .card-hebergement {
@@ -248,6 +260,7 @@ a {
     justify-content: space-around;
     align-content: space-around;
     padding: 10px;
+ 
 }
 
 .box-hebergement {
@@ -281,6 +294,14 @@ a {
     margin: 2px;
 }
 
+.star-blue {
+    color: #0065fc;
+}
+
+.star-grey {
+    color: #f2f2f2;
+}
+
 .hebergement h4 {
     margin: 20px;
 }
@@ -297,6 +318,7 @@ a {
     padding: 10px;
     border-radius: 15px;
     margin-left: 20px;
+   
 }
 
 .titre-populaires {
@@ -483,11 +505,13 @@ footer {
     justify-content: flex-start;
     background-color: #f2f2f2;
     margin: 0;
+    
 }
 
 .footer-box {
     width: 30%;
-    margin: 30px;
+    margin: 30px 0 30px 0;
+    padding-left: 20px;
 }
 
 .footer-box li {
@@ -497,6 +521,10 @@ footer {
 
 .footer-box ul {
     padding-left: 0;
+}
+
+.footer-box h3 {
+    padding: 10px 0 10px 0;
 }
 
 /* media queries */
@@ -510,6 +538,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0;
        
     }
 
@@ -537,6 +566,18 @@ footer {
     }
         
     /* Section recherche */
+
+    .recherche {
+        padding: 10px;
+    }
+    .barre-formulaire {
+        width: 100%;
+        
+    }
+
+    .barre-recherche{
+        width: 70%;
+    }
 
     .btn-recherche {
         display: none;
@@ -578,15 +619,16 @@ footer {
         margin: 0px;
     }
 
-    .hebergement {
+    .hebergement-main-box {
         width: 100%;
-        margin: 5px;
         background-color: white;
+              
     }
     
     .card-hebergement {
         display: flex;
         flex-direction: column;
+        width: 100%;
         padding: 0px;
     }
 
@@ -603,7 +645,7 @@ footer {
 
     .populaires {
         width: 100%;
-        margin: 5px;
+        margin: 0;
         border-radius: 0;
 
     }
@@ -654,18 +696,16 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        margin-top: 20px;
+        padding-top: 20px;
     }
 
     .footer-box {
         width: 100%;
+        margin: 10px 0 10px 0;
     }
 
-    footer {
-        margin-top: 20px;
-    }
-
-
+    
 }
 
 
@@ -686,11 +726,10 @@ footer {
         flex-direction: column-reverse;
     }
 
-    .hebergement {
+    .hebergement-main-box {
         width: 100%;
-        margin: 5px;
+        padding: 0;   
         background-color: white;
-        padding: 0;
     }
 
         
